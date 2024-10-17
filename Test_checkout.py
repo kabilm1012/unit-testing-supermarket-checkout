@@ -6,9 +6,7 @@ def checkout():
     checkout = Checkout()
     return checkout
 
-def test_CanAddItemPrice(checkout):
+def test_CanCalculateTotal(checkout):
     checkout.addItemPrice("a", 1)
-
-def test_CanAddItem(checkout):
     checkout.addItem("a")
-
+    assert checkout.calculateTotal() == 1
