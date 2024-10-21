@@ -3,6 +3,9 @@ class Checkout:
         self.prices = {}
         self.total = 0
 
+    def addDiscount(self, item, noOfItems, price):
+        pass
+
     def addItemPrice(self, item, price):
         self.prices[item] = price
 
@@ -11,3 +14,4 @@ class Checkout:
 
     def calculateTotal(self):
         return self.total
+
